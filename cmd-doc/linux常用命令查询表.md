@@ -23,7 +23,7 @@
 `passwd tmp_3452` #修改用户密码<br/>
 `userdel tmp_3452` #删除用户<br/>
 `userdel -f tmp_3452` #删除用户连同用户目录一并删除<br/>
-`w` #查看当前登陆用户
+`w` #查看当前登陆用户<br/>
 `useradd oracle -g oinstall -G dba` #新创建一个oracle用户，这初始属于oinstall组，且同时让他也属于dba组<br/>
 `chown -R www:www /data/tomcat` #给某个目录赋用户和组<br/>
 `chmod -R g+x /data/tomcat` #给某个目录赋执行权限<br/>
@@ -48,5 +48,5 @@
 `vi /etc/sudoers` #编辑sudo内容
 ##### 新增如下内容
 `publish ALL=(root)NOPASSWD:/usr/local/nginx/sbin/nginx,/bin/cp,/bin/mkdir` #该用户不用密码可操作谋面配置目录下的内容<br/>
-`denglitao ALL=NOPASSWD: /bin/su - root`
+`denglitao ALL=NOPASSWD: /bin/su - root`<br/>
 `ganziyu ALL=NOPASSWD: /data/www,/usr/local/resin,/bin/su - root` #该用户不用密码 就能操作后面的目录或su<br/>
