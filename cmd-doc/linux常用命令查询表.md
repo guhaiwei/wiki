@@ -23,9 +23,9 @@
 `chmod -R g+x /data/tomcat` #给某个目录赋执行权限<br/>
 
 #### shell
+`awk -F '-' '{print $2}'` #按照“-”字符切分字符串，并取第二个字符串<br/>
 
 #### 服务器支持
-`awk -F '-' '{print $2}'` #按照“-”字符切分字符串，并取第二个字符串<br/>
 `ln -s /usr/local/resin-3.1.2 /usr/local/resin` #软连接<br/>
 `find -type f -name '*.php'|xargs grep 'GroupRecord'` #查找某个字符串出现在哪个文件中<br/>
 `du -h --max-depth=1 work/testing/*` #某个目录下的空间大小分布<br/>
