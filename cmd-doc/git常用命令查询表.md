@@ -1,5 +1,5 @@
 ### Git 常用命令查询表
-
+安装gitlab步骤<https://about.gitlab.com/installation/>
 #### 创建版本库   
 `git clone https://github.com/guhaiwei/wiki`#克隆远程版本库<br/>
 `git init`#初始化本地版本库<br/>
