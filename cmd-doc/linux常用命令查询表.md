@@ -11,8 +11,8 @@
 `zip -r resin.zip resin-3.1.2` #压缩并打包
 
 #### 远程登录
-`ssh publish@10.10.100.10 -p16333` #远程登录机器
-`scp -r <folder> -P 16333 publish@10.10.100.10:/data/` #scp上传某个目录
+`ssh publish@10.10.100.10 -p16333` #远程登录机器<br/>
+`scp -r <folder> -P 16333 publish@10.10.100.10:/data/` #scp上传某个目录<br/>
 `rz -y` #上传某个文件<br/>
 `sz <filename>` #下载某个文件<br/>
 
@@ -31,7 +31,7 @@
 `du -h --max-depth=1 work/testing/*` #某个目录下的空间大小分布<br/>
 
 #### 随机密码
-`date +%s | sha256sum | base64 | head -c 16 ; echo` 
-`date +%s | md5sum | base64 | head -c 10 ; echo`
-`date +%s | md5 | base64 | head -c 32 ; echo`
-`openssl rand -base64 16`
+`date +%s | sha256sum | base64 | head -c 16 ; echo` <br/>
+`date +%s | md5sum | base64 | head -c 10 ; echo`<br/>
+`date +%s | md5 | base64 | head -c 32 ; echo`<br/>
+`openssl rand -base64 16`<br/>
